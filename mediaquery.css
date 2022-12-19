@@ -1,0 +1,106 @@
+/*Laptop version*/
+
+@media screen and (min-width:910px) {
+
+    #navMobile {
+        display: none;
+    }
+
+    .cards div {
+        width: 90%;
+    }
+}
+
+/* Mobil Version*/
+@media screen and (max-width:910px) {
+
+    /* Body */
+
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #navLaptop { /*skjul laptop navs*/
+        display: none;
+    }
+
+    #navMobile { /* medova og burger på linje */
+        display: flex;
+    }
+
+    #logo { /*Str på flexbox*/
+        width: 200px; 
+    }
+
+    #logo img { /* logo i flexboxen*/
+        margin-top: 10px;
+    }
+
+    #burgermenu img { /*Str og placering*/
+        width: 40px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    /*Section*/
+    .cards, article, .quizcontainer {
+        width: 90%;
+    }
+     /*Section Div*/
+    .cards div, article div {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #medovacontainer img { /* Få Medova til at stå lidt alene*/
+        width: 100%;
+        margin:auto;
+        margin-bottom: 100px;
+    }
+
+    #medovacontainer { /* Div Medova*/
+        font-size: larger;
+        width: 80%;
+        margin:50px;
+        margin-bottom: 300px;
+    }
+
+    #kopcontainer {
+        display: none; /* Koppen fjernes, da den ikke har decideret indhold i denne context*/
+    }
+
+    #medovacontainer a button { /* Knapperne fyldes helt ud*/
+        width: 100%;
+    }
+
+    /* Footer Media Query*/
+
+    footer {
+        width: 100%;
+        flex-direction: column;
+        display: block;
+        align-items: center;
+    }
+
+    footer div {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    footer #icons {
+        font-size: 40px;
+        margin-bottom: 100px;
+        margin-top: 40px;
+    }
+}
+
+/* Siden havde et wdith problem, man kunne scroll til siden, hvori der vil være
+et ''whitespace'' på højre side, når det galdt Mobile First Version. Dette blev
+løst ved at sætte display:none i hver sections indtil man ikke kunne scrolle.
+
+Problemet lå i footeren, hvor jeg senere finder ud af, det pga. jeg har lavet et
+margin-left ved en div, hvilket havde fucked det op. */
