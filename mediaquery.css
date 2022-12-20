@@ -2,28 +2,17 @@
 
 @media screen and (min-width:910px) {
 
-    #navMobile {
+    #navMobile { /*Skjuler burgermenu*/
         display: none;
     }
-
-    .cards div {
-        width: 90%;
-    }
 }
+
 
 /* Mobil Version*/
 @media screen and (max-width:910px) {
 
-    /* Body */
-
-    body {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    #navLaptop { /*skjul laptop navs*/
+    /* Header */
+    #navLaptop { /*skjuler laptop navs*/
         display: none;
     }
 
@@ -49,6 +38,7 @@
     .cards, article, .quizcontainer {
         width: 90%;
     }
+
      /*Section Div*/
     .cards div, article div {
         width: 100%;
@@ -56,9 +46,9 @@
         align-items: center;
     }
 
-    #medovacontainer img { /* Få Medova til at stå lidt alene*/
+    #medovacontainer img { 
         width: 100%;
-        margin:auto;
+        margin:auto;/* Får Medova til at stå lidt alene*/
         margin-bottom: 100px;
     }
 
@@ -69,14 +59,14 @@
         margin-bottom: 300px;
     }
 
-    #kopcontainer {
-        display: none; /* Koppen fjernes, da den ikke har decideret indhold i denne context*/
-    }
-
-    #medovacontainer a button { /* Knapperne fyldes helt ud*/
+    #medovacontainer a button { /* Knapperne fyldes helt ud i div'en*/
         width: 100%;
     }
 
+    #kopcontainer {
+        display: none; /* Koppen fjernes, da den ikke har decideret indhold i denne context*/
+    }
+    
     /* Footer Media Query*/
 
     footer {

@@ -1,0 +1,227 @@
+* { /* Denne indstliing nulstiller alt, så jeg bestmmer tilpasningen. */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/********* HEADER ************/
+
+header {
+    /*Header placering*/
+    position: fixed; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+    top: 0px;
+
+    background-color: black;
+}
+
+nav > a {
+    /* styling */
+    font-family: 'Noto Serif Khmer', serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+
+    font-size: 19px;
+
+    /* placering */
+    margin: 70px;
+}
+
+a img {
+    width: 180px;
+}
+
+#navLaptop a:hover {
+    color: rgb(237, 170, 14);
+    transition: all 0.3s ease 0s;
+}
+
+/********* HEADER ************/
+
+
+
+/********** BODY **********/
+
+body { 
+    width: 100%;
+    /*Footer til at blive på bunden*/
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    /*Baggrund*/
+    background-image: url(images/baggrund.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*CARDCONTAINER*/
+
+.cards { /*Jeg har lavet en section, som indebærer 2 divs. Hver div har et billede
+            som sættes ved siden af hinanden, vha. display flex.*/
+    display: flex;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.cards div {
+    width: 400px;
+}
+
+#medovacontainer {
+    font-family: 'Raleway', sans-serif;
+
+    /* placering*/
+    margin-left: 240px;
+
+    /*Størrelsen*/
+    height: 300px;
+    width: 400px;
+    
+}
+
+#medovacontainer img {
+    width: 100%; /*img fyldes helt ud i diven*/
+}
+
+#medovacontainer h2 {
+    /* placering */
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    /* styling */
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+}
+
+#medovacontainer p, a {
+    /* placering */
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    /* styling */
+    color: white;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+#medovacontainer a {
+    /* styling */
+    text-decoration: underline;
+}
+
+#medovacontainer a:hover {
+    /* styling */
+    font-weight:bolder;
+}
+
+#medovacontainer button {
+    /* placering */
+    padding: 12px;
+    margin-top: 50px;
+    margin-right: 20px;
+
+    /* styling */
+    background-color: rgb(243, 158, 21);
+    color: rgb(13, 105, 3);
+
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+
+    cursor: pointer;
+}
+
+#medovacontainer button:hover {
+    /* styling */
+    background-color: rgb(185, 116, 6);
+    color: rgb(127, 225, 127);
+}
+
+
+/*Kopcontainer div 2*/
+#kopcontainer {
+    /* placering af div */
+    height: 400px;
+    width: 400px;
+    margin-left: 150px;
+}
+
+#kopcontainer img {
+    width: 100%;
+}
+/********** BODY **********/
+
+
+
+/********* FOOTER ********/
+footer {
+    /* placering*/
+    width: 100%;
+    padding: 30px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    /* styling */
+    background-color: green;
+
+}
+
+footer div {
+    text-align: center;
+    left: 100px;
+}
+
+footer img {
+    width: 240px;
+    padding-bottom: 200px;
+}
+
+footer h1 {
+    font-family: 'Noto Serif Khmer', serif;
+    color: white;
+    text-align: center;
+}
+
+footer form input {
+    /*placering*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 45px;
+    
+    border-radius: 4px;
+    text-align: center;
+    outline: none;
+}
+
+footer form button {
+    padding: 10px 20px;
+    
+    margin-bottom: 150px;
+
+    border: 2px solid black;
+    border-radius: 10px;
+
+    background-color: orange;
+    cursor: pointer;
+}
+
+footer #icons {
+    font-size: 50px;
+    right: 100px;
+    margin-top: 20px;
+    margin-bottom: 130px;
+    cursor: pointer;
+}

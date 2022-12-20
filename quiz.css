@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.quizcontainer {
+
+    /*Centrer*/
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding-bottom: 100px;
+    
+    background-color: rgb(190, 190, 192, 0.5);
+
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.quizcontainer div {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.quizcontainer div h1 { /* ''Den ultimative te-quiz''*/
+    margin: 20px;
+    font-size: 40px;
+    font-weight: 100px;
+}
+
+.quizcontainer div h2 {
+    font-weight: 900;
+    margin: 50px;
+    
+}
+
+.quizcontainer div h3 {
+    padding-bottom: 50px;
+    
+}
+
+/******* Button / Svarmuligheder ****/
+.quizcontainer button{
+
+    margin: auto;
+    margin-bottom: 20px;
+    display: block;
+    border: 2px solid black;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 20px;
+
+    padding: 10px;
+    width: 200px;
+}
+
+.quizcontainer button:hover {
+    color: white;
+}
+.quizcontainer button:focus { /* Forkerte svar */
+    background-color: red;
+}
+
+.quizcontainer .focus:focus { /* Rigtige svar*/
+  background-color: rgb(59, 196, 0);
+}
+
+.quizcontainer form input { /* Indtast email */
+
+    width: 300px;
+    height: 45px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.quizcontainer form button { /* Tilmeld */
+    background-color: orange;
+    color: rgb(3, 71, 3);
+
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+hr {
+    margin-top: 100px;
+}
+

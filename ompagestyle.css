@@ -1,0 +1,43 @@
+article {
+    width: 60%;
+    margin: auto;
+    min-height: 100vh;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding-bottom: 100px;
+
+    background-color: rgb(209, 167, 167);
+}
+
+article h1 {
+    font-size: 40px;
+    padding: 30px 20px;
+    font-family: 'Noto Serif Khmer', serif;
+}
+
+article h2 {
+    font: 30px;
+    font-family: 'Noto Serif Khmer', serif;
+    padding: 20px 20px;
+}
+
+article h3 {
+    padding: 20px 20px;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(147, 147, 147);
+    font-size: 15px;
+}
+
+#imgplaceholder img {
+    width: 95%;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+article p {
+    font-size: 20px;
+    padding: 10px 20px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.4;
+    font-weight: 400;
+}

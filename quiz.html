@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    
+    <!--Stylesheet-->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="ompagestyle.css">
+  <link rel="stylesheet" href="quiz.css">
+  <link rel="stylesheet" href="mediaquery.css">
+
+      <!--ICONS-->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      
+       <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="images/logofavicon.png">
+    
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <header>
+        <nav id="navLaptop">
+            <a href="index.html">hjem</a>
+            <a href="quiz.html">spil og vind</a>
+
+           
+                <a href="index.html">
+                <img src="images/medova.png" alt="medovalogo">
+                </a>
+
+            <a href="guide.html">guide</a>
+            <a href="ommedova.html">om medova</a>
+        </nav>
+
+        <nav id="navMobile">
+            <a id="logo" href="index.html">
+                <img src="images/medova.png" alt="medovalogo">
+            </a>
+
+            <a id="burgermenu" href="menu.html">
+                <img src="images/burgericon.png" alt="burgermenu">
+            </a>
+        </nav>
+
+
+    </header>
+
+
+    <section class="quizcontainer">
+
+        <div>
+            <h1>Den ultimative Te Quiz!</h1>
+            <h2>Hvor godt kender du til te? Test din 
+                viden og deltag i konkurrencen om et 
+                års forbrug af Medova Te, uanset dine 
+                quiz resultater!</h2>
+            <h3> Er du klar?</h3>
+        </div>
+
+        <hr>
+        <!--Spørgsmål 1-->
+        <div>
+            <h2>I hvilket land blev te først drukket i følge historien?</h2>
+            <h3>Spørgsmål 1 ud af 5</h3>
+        
+
+            <button>Tyskland</button>
+            <button>England</button>
+            <button>Nepal</button>
+            <button class="focus">Kina</button> <!-- Focus knapperne er de rigtige svar og lyser grøn vha. CSS-->
+        </div>
+
+        <hr>
+
+        <!--Spørgsmål 2-->
+        <div>
+            <h2>Storbritannien har et befolkningstal på 67 millioner mennesker. Hvor mange kopper te drikkes i Storbritannien hver dag?</h2>
+            <h3>Spørgsmål 2 ud af 5</h3>
+        
+
+            <button class="focus">165 millioner</button>
+            <button>83 millioner</button>
+            <button>207 millioner</button>
+            <button>124 millioner</button>
+        </div>
+
+        <hr>
+
+        <!--Spørgsmål 3-->
+        <div>
+            <h2>Hvilket land er Medova teen ikke produceret fra?</h2>
+            <h3>Spørgsmål 3 ud af 5</h3>
+        
+
+            <button>Kenya</button>
+            <button>Indonesien</button>
+            <button class="focus">Kina</button>
+            <button>Sri Lanka</button>
+        </div>
+
+        <hr>
+
+        <!--Spørgsmål 4-->
+        <div>
+            <h2>Der findes mange forskellige varianter af te, men hvilken type er den mest udbredte?</h2>
+            <h3>Spørgsmål 4 ud af 5</h3>
+        
+
+            <button>Grøn te</button>
+            <button>Urte te</button>
+            <button class="focus">Sort te</button>
+            <button>Hvid</button>
+        </div>
+
+        <hr>
+        
+        <!--Sprøgsmål 5-->
+        <div>
+            <h2>Medova teen var revolutionær i dansk te historie, men hvor mange tebreve indeholder en pakke?</h2>
+            <h3>Spørgsmål 5 ud af 5</h3>
+
+            <button>15</button>
+            <button>10</button>
+            <button>20</button>
+            <button class="focus">25</button>
+        </div>
+        <hr>
+        <!--Afslutningen-->
+
+            <div>
+                <h2>Du har færdiggjort quizzen og kan deltage i konkurrencen om et års forbrug af Medova teen.</h2>
+                <h3> Indtast din mail herunder og du er med i konkurrencen!</h3>
+            </div>
+    
+            <form>
+
+                <input type="text" placeholder="Indtast din e-mail her">
+                
+                <button type="submit">TILMELD</button> 
+
+            </form>
+    </section>
+
+<footer>
+    <div>
+        <img src="images/medova.png" alt="medovalogo">
+    </div>
+
+    <div>
+        <h1>Nyhedsbrev</h1>
+            <form>
+                <input type="text" placeholder="Indtast din e-mail her">
+                <button type="submit">TILMELD</button>
+            </form>
+    </div>
+
+    <div>
+        <h1>Sociale medier</h1>
+        <div id="icons"> <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

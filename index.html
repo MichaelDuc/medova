@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medova Te</title>
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+
+    <!--ICONS-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="images/logofavicon.png">
+    
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Khmer&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Laptop version -->
+        <nav id="navLaptop"> 
+            <a href="index.html">hjem</a>
+            <a href="quiz.html">spil og vind</a>
+
+           
+                <a href="index.html"> <!-- Logo i midten -->
+                <img src="images/medova.png" alt="medovalogo">
+                </a>
+
+            <a href="guide.html">guide</a>
+            <a href="ommedova.html">om medova</a>
+        </nav>
+        
+        <!-- Mobil Version-->
+        <nav id="navMobile">
+            <a id="logo" href="index.html">
+                <img src="images/medova.png" alt="medovalogo">
+            </a>
+
+            <a id="burgermenu" href="menu.html">
+                <img src="images/burgericon.png" alt="burgermenu">
+            </a>
+        </nav>
+
+    </header>
+    
+    <section class="cards"> <!-- Main section til forsiden -->
+
+        <div id="medovacontainer"> <!-- Logo, tekst og knapper section-->
+
+            <img src="images/medova.png" alt="medova">
+
+            <h2>Prøv den nye Medova Te med et ekstra kick.</h2> <!-- Ændret fra h1 til h2 pga. validering.-->
+            <p> Er dit energiniveau helt nede og har du brug for et spark bagpå? 
+                På få minutter kan du genlade dine batterier og holde dig kørende med ny variant af Medova te.</p> 
+
+            <a href="ommedova.html">Lær mere om Medova her</a>
+
+            <p>... eller vælg en knap nedenfor</p>
+
+                <!-- De to call to action knapper sættes ind i <form>, på baggrund
+                    af feedback fra HTML validator-->
+            <form style="display: inline" action="guide.html" method="get">
+                <button>Sådan laver du en god te</button>
+            </form>
+
+            <form style="display: inline" action="quiz.html" method="get">
+                <button>Tag vores quiz og vind</button>
+            </form>
+
+        </div>
+
+        <div id="kopcontainer"> <!-- Kop section på forsiden-->
+            <img src="images/kopbag.png" alt="kop">
+        </div>
+
+    </section>
+
+
+    <footer>
+        <div>
+            <img src="images/medova.png" alt="medovalogo">
+        </div>
+
+        <div>
+
+            <h1>Nyhedsbrev</h1>
+
+                <form>
+                    <input type="text" placeholder="Indtast din e-mail her">
+                    <button type="submit">TILMELD</button>
+                </form>
+
+        </div>
+
+        <div>
+
+            <h1>Sociale medier</h1>
+
+            <div id="icons"> 
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
